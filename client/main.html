@@ -3,6 +3,27 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor 05/05!</h1>
-  <!-- info -->
+  <div class="root">
+
+  </div>
 </body>
+
+<template name="hello">
+  <div class="hello">
+    <h2>Hello {{param}}</h2>
+    {{#each tasks}}
+    <h1>{{text}}</h1>
+    {{/each}}
+    {{#if user}}
+    {{>info}}
+    {{/if}}
+    <button>GO info</button>
+  </div>
+</template>
+
+<template name="info">
+  <div class="info">
+    <h1>Info</h1>
+    <h2>Info</h2>
+  </div>
+</template>
