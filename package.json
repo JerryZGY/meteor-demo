@@ -9,6 +9,7 @@
     "meteor-node-stubs": "~0.2.4"
   },
   "devDependencies": {
+    "@types/jquery": "^2.0.45",
     "@types/meteor": "1.4.1"
   }
 }

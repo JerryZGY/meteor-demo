@@ -3,27 +3,15 @@
 </head>
 
 <body>
-  <div class="root">
-
-  </div>
+  {{>hello}}
 </body>
 
 <template name="hello">
-  <div class="hello">
-    <h2>Hello {{param}}</h2>
     {{#each tasks}}
-    <h1>{{text}}</h1>
+      <h1>{{getNumberFromText text}}</h1>
     {{/each}}
-    {{#if user}}
-    {{>info}}
-    {{/if}}
-    <button>GO info</button>
-  </div>
-</template>
 
-<template name="info">
-  <div class="info">
-    <h1>Info</h1>
-    <h2>Info</h2>
-  </div>
+    {{fetchData}}
+
+    <div id="red" style="height: 200px;width: 200px;background-color: black;"></div>
 </template>
